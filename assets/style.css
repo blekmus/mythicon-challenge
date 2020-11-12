@@ -1,0 +1,734 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  background-color: #293241; }
+
+.home-page {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 15% auto 40%;
+      grid-template-rows: 15% auto 40%; }
+  .home-page .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .home-page .logo .line {
+      background-color: #FEE3AE;
+      height: 3px;
+      width: 15%;
+      margin: auto 40px;
+      max-width: 180px; }
+    .home-page .logo .text {
+      font-weight: 700;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      color: #FEE3AE;
+      font-family: 'Fira Code', monospace;
+      text-transform: uppercase;
+      font-size: 1.1em;
+      letter-spacing: 6px; }
+  .home-page .main-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 30px; }
+    .home-page .main-text h1 {
+      font-family: 'Libre Baskerville', serif;
+      color: #E0FBFC;
+      font-size: 3.5em;
+      font-weight: 700;
+      text-align: center;
+      max-width: 700px;
+      line-height: 60px; }
+  .home-page .app-info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 56% 44%;
+        grid-template-columns: 56% 44%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .home-page .app-info .desc-container {
+      border-radius: 4px;
+      background-color: #232B3C;
+      max-height: 160px;
+      max-width: 400px;
+      height: 70%;
+      width: 90%;
+      -ms-grid-column-align: end;
+          justify-self: end;
+      margin-right: 10px;
+      display: -ms-grid;
+      display: grid;
+          grid-template-areas: "desc-container-title desc-container-line" "desc-container-text desc-container-text";
+      -ms-grid-columns: 140px auto;
+          grid-template-columns: 140px auto;
+      -ms-grid-rows: 35% 65%;
+          grid-template-rows: 35% 65%; }
+      .home-page .app-info .desc-container .app-name {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        grid-area: desc-container-title;
+        margin: auto auto auto 15px; }
+        .home-page .app-info .desc-container .app-name h2 {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 700;
+          color: white; }
+      .home-page .app-info .desc-container .line {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        grid-area: desc-container-line;
+        background-color: #FEE3AE;
+        height: 3px;
+        width: 60%;
+        border-radius: 50px;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        margin-top: 5px; }
+      .home-page .app-info .desc-container .desc-text {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-area: desc-container-text;
+        margin: 0 auto auto 15px;
+        max-width: 70%;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        color: #BFB6B6; }
+    .home-page .app-info .down-container {
+      border-radius: 4px;
+      background-color: #232B3C;
+      max-height: 160px;
+      max-width: 270px;
+      height: 70%;
+      width: 90%;
+      -ms-grid-column-align: start;
+          justify-self: start;
+      display: -ms-grid;
+      display: grid;
+      grid-gap: 10px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+          grid-template-areas: "ios" "android"; }
+      .home-page .app-info .down-container .down-btn {
+        background-color: #E0FBFC;
+        border-radius: 6px;
+        padding: 2px 10px 2px 12px;
+        height: 60px;
+        -webkit-transition: background-color 0.15s ease;
+        transition: background-color 0.15s ease;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .home-page .app-info .down-container .down-btn:hover {
+          background-color: #cceff0; }
+        .home-page .app-info .down-container .down-btn .text {
+          font-family: 'Source Sans Pro', sans-serif;
+          padding-left: 10px; }
+          .home-page .app-info .down-container .down-btn .text h3 {
+            font-weight: 300;
+            text-transform: uppercase;
+            line-height: 10px;
+            font-size: 0.9em;
+            padding-top: 3px; }
+          .home-page .app-info .down-container .down-btn .text h2 {
+            font-weight: 400;
+            font-size: 1.1em; }
+        .home-page .app-info .down-container .down-btn .icon {
+          height: 40px; }
+          .home-page .app-info .down-container .down-btn .icon svg {
+            height: 100%; }
+      .home-page .app-info .down-container .ios {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        grid-area: ios;
+        -ms-flex-item-align: end;
+            -ms-grid-row-align: end;
+            align-self: end; }
+      .home-page .app-info .down-container .android {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        grid-area: android;
+        -ms-flex-item-align: start;
+            -ms-grid-row-align: start;
+            align-self: start; }
+
+.info-page {
+  margin: 40px 0;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "info-page-mission info-page-essence" "info-page-target info-page-target";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  grid-gap: 40px; }
+  .info-page .info-item {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .info-page .info-item h1 {
+      font-family: 'Libre Baskerville', serif;
+      color: #E0FBFC;
+      font-size: 2em;
+      font-weight: 700; }
+    .info-page .info-item hr {
+      border: solid 2px #FEE3AE;
+      border-radius: 50px;
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 4px; }
+    .info-page .info-item p {
+      color: #BFB6B6;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1.2em;
+      padding-top: 18px;
+      line-height: 24px;
+      margin: 0 20%; }
+  .info-page .mission {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: info-page-mission; }
+  .info-page .essence {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: info-page-essence; }
+  .info-page .target {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: info-page-target; }
+    .info-page .target p {
+      margin: 0 30%; }
+
+.products-page {
+  margin: 100px 0 40px 0; }
+  .products-page .header {
+    position: relative;
+    background-color: #1D2331;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 350px 1% auto;
+        grid-template-columns: 350px 1% auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .products-page .header h1 {
+      font-family: 'Libre Baskerville', serif;
+      color: #E0FBFC;
+      font-size: 3.5em;
+      font-weight: 700;
+      text-align: center;
+      max-width: 700px;
+      margin-bottom: 10px; }
+    .products-page .header .line {
+      height: 60%;
+      width: 3px;
+      border-radius: 50px;
+      background-color: #FEE3AE; }
+    .products-page .header p.desktop {
+      padding: 50px;
+      color: #BFB6B6;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1.1em; }
+    .products-page .header p.mobile {
+      display: none; }
+    .products-page .header p.note {
+      position: absolute;
+      bottom: 2%;
+      right: 1%;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 0.8em;
+      color: #8b8b8b; }
+  .products-page .product-cards {
+    margin: 80px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px; }
+    .products-page .product-cards .product {
+      background-color: #232B3C;
+      width: 70%;
+      margin: 0 auto;
+      border-radius: 4px;
+      height: 220px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 30px; }
+      .products-page .product-cards .product img {
+        height: 100%;
+        border-radius: 4px 0 0 4px; }
+      .products-page .product-cards .product .info {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-rows: 35% auto 40%;
+            grid-template-rows: 35% auto 40%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .products-page .product-cards .product .info h1 {
+          color: white;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 1.9em; }
+        .products-page .product-cards .product .info p {
+          -ms-flex-item-align: start;
+              -ms-grid-row-align: start;
+              align-self: start;
+          color: #BFB6B6;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 1.2em;
+          padding-right: 10%; }
+        .products-page .product-cards .product .info h2 {
+          color: #FEE3AE;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 1.6em; }
+
+.reviews-page {
+  margin-bottom: 100px; }
+  .reviews-page .header {
+    position: relative;
+    background-color: #1D2331;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 350px 1% auto;
+        grid-template-columns: 350px 1% auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .reviews-page .header h1 {
+      font-family: 'Libre Baskerville', serif;
+      color: #E0FBFC;
+      font-size: 3.5em;
+      font-weight: 700;
+      text-align: center;
+      max-width: 700px;
+      margin-bottom: 10px; }
+    .reviews-page .header .line {
+      height: 60%;
+      width: 3px;
+      border-radius: 50px;
+      background-color: #FEE3AE; }
+    .reviews-page .header p {
+      padding: 50px;
+      color: #BFB6B6;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1.1em; }
+  .reviews-page .review-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 350px auto;
+        grid-template-columns: 350px auto;
+    height: 500px; }
+    .reviews-page .review-container .comment-main {
+      -ms-grid-column-align: center;
+          justify-self: center;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      margin-bottom: 20px;
+      width: 90%; }
+      .reviews-page .review-container .comment-main h1 {
+        color: white;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.7em;
+        text-align: center;
+        font-weight: 600; }
+      .reviews-page .review-container .comment-main h2 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.3em;
+        text-align: right;
+        font-style: italic;
+        font-weight: 400;
+        color: #BFB6B6; }
+    .reviews-page .review-container .comment-cards {
+      display: -ms-grid;
+      display: grid;
+          grid-template-areas: "comment-card-first comment-card-second" "comment-card-third comment-card-forth";
+      gap: 30px 30px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 50px 70px; }
+      .reviews-page .review-container .comment-cards .comment {
+        border-radius: 4px;
+        background-color: #232B3C;
+        height: 180px;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 160px auto;
+            grid-template-columns: 160px auto; }
+        .reviews-page .review-container .comment-cards .comment .left {
+          margin-top: 12px;
+          margin-left: 12px; }
+          .reviews-page .review-container .comment-cards .comment .left img {
+            width: 105px;
+            height: 110px;
+            -o-object-fit: cover;
+               object-fit: cover;
+            border-radius: 8px; }
+          .reviews-page .review-container .comment-cards .comment .left h1 {
+            font-size: 1.4em;
+            font-family: 'Source Sans Pro', sans-serif;
+            color: white;
+            line-height: 25px;
+            font-size: 600;
+            margin-left: 2px; }
+          .reviews-page .review-container .comment-cards .comment .left h2 {
+            font-size: 0.9em;
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #BFB6B6;
+            font-weight: 600;
+            margin-left: 2px; }
+        .reviews-page .review-container .comment-cards .comment .right {
+          margin: 20px 10px 20px 0;
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-rows: 20% auto 20%;
+              grid-template-rows: 20% auto 20%;
+          justify-items: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .reviews-page .review-container .comment-cards .comment .right svg {
+            height: 22px; }
+            .reviews-page .review-container .comment-cards .comment .right svg:last-child {
+              -webkit-transform: rotate(180deg);
+                      transform: rotate(180deg); }
+          .reviews-page .review-container .comment-cards .comment .right h1 {
+            font-size: 1.8em;
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #E0FBFC;
+            font-weight: 400;
+            text-align: center;
+            line-height: 95%; }
+
+.staff-page .header {
+  position: relative;
+  background-color: #1D2331;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 350px 1% auto;
+      grid-template-columns: 350px 1% auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .staff-page .header h1 {
+    font-family: 'Libre Baskerville', serif;
+    color: #E0FBFC;
+    font-size: 3.5em;
+    font-weight: 700;
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 10px; }
+  .staff-page .header .line {
+    height: 60%;
+    width: 3px;
+    border-radius: 50px;
+    background-color: #FEE3AE; }
+  .staff-page .header p {
+    padding: 50px;
+    color: #BFB6B6;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1em; }
+
+.staff-page .staff-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 150px 50px 100px 50px; }
+  .staff-page .staff-container .staff-card {
+    position: relative;
+    background-color: #232B3C;
+    border-radius: 8px;
+    margin: 0 40px;
+    width: 250px;
+    height: 165px; }
+    .staff-page .staff-container .staff-card .image-container {
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 150px;
+      left: 0;
+      top: -90px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%; }
+      .staff-page .staff-container .staff-card .image-container img {
+        height: 100%; }
+    .staff-page .staff-container .staff-card .staff-info {
+      margin-top: 65px;
+      text-align: center;
+      font-family: 'Source Sans Pro', sans-serif; }
+      .staff-page .staff-container .staff-card .staff-info h1 {
+        font-weight: 600;
+        font-size: 1.4em;
+        color: white; }
+      .staff-page .staff-container .staff-card .staff-info h3 {
+        font-size: 700;
+        font-size: 2em;
+        line-height: 20px;
+        color: #FEE3AE; }
+      .staff-page .staff-container .staff-card .staff-info h2 {
+        font-weight: 400;
+        font-size: 1em;
+        color: #BFB6B6;
+        line-height: 25px; }
+
+.location-contact-page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 40px;
+          column-gap: 40px; }
+  .location-contact-page .locations {
+    border-radius: 0 1px 1px 0;
+    background-color: #1D2331; }
+    .location-contact-page .locations .header {
+      margin: 0 70px 0 50px;
+      margin-top: -26px; }
+      .location-contact-page .locations .header h1 {
+        font-family: 'Libre Baskerville', serif;
+        color: #E0FBFC;
+        font-size: 2.5em;
+        font-weight: 700; }
+    .location-contact-page .locations .map-container {
+      margin: 20px 70px 0 50px; }
+      .location-contact-page .locations .map-container .map {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-bottom: 40px;
+        -webkit-column-gap: 20px;
+                column-gap: 20px; }
+        .location-contact-page .locations .map-container .map .map-image {
+          height: 210px; }
+          .location-contact-page .locations .map-container .map .map-image img {
+            height: 100%;
+            border: 2px solid #FEE3AE;
+            border-radius: 4px; }
+        .location-contact-page .locations .map-container .map .map-info {
+          -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center; }
+          .location-contact-page .locations .map-container .map .map-info h1, .location-contact-page .locations .map-container .map .map-info h2 {
+            color: white;
+            font-family: 'Source Sans Pro', sans-serif; }
+          .location-contact-page .locations .map-container .map .map-info h1 {
+            font-weight: 600;
+            font-size: 1.4em; }
+          .location-contact-page .locations .map-container .map .map-info h2 {
+            font-weight: 400;
+            font-size: 1.3em;
+            margin-top: 10px; }
+  .location-contact-page .contact {
+    border-radius: 1px 0 0 1px;
+    background-color: #1D2331; }
+    .location-contact-page .contact .header {
+      margin: 0 70px 0 50px;
+      margin-top: -26px; }
+      .location-contact-page .contact .header h1 {
+        font-family: 'Libre Baskerville', serif;
+        color: #E0FBFC;
+        font-size: 2.5em;
+        font-weight: 700; }
+      .location-contact-page .contact .header p {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        color: white;
+        font-size: 1.1em;
+        margin-top: 10px; }
+    .location-contact-page .contact .input {
+      margin: 40px 70px 0 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      row-gap: 30px; }
+      .location-contact-page .contact .input input, .location-contact-page .contact .input textarea {
+        background-color: transparent;
+        border: solid 2px #FEE3AE;
+        border-radius: 4px;
+        font-size: 1.05em;
+        color: white;
+        padding: 12px 10px;
+        width: 100%;
+        font-family: 'Source Sans Pro', sans-serif; }
+        .location-contact-page .contact .input input::-webkit-input-placeholder, .location-contact-page .contact .input textarea::-webkit-input-placeholder {
+          opacity: 80%; }
+        .location-contact-page .contact .input input:-ms-input-placeholder, .location-contact-page .contact .input textarea:-ms-input-placeholder {
+          opacity: 80%; }
+        .location-contact-page .contact .input input::-ms-input-placeholder, .location-contact-page .contact .input textarea::-ms-input-placeholder {
+          opacity: 80%; }
+        .location-contact-page .contact .input input::placeholder, .location-contact-page .contact .input textarea::placeholder {
+          opacity: 80%; }
+      .location-contact-page .contact .input .first-name {
+        width: 46%; }
+      .location-contact-page .contact .input .last-name {
+        width: 46%;
+        margin-left: auto; }
+      .location-contact-page .contact .input .more-info, .location-contact-page .contact .input .message {
+        height: 150px; }
+      .location-contact-page .contact .input button {
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        color: black;
+        padding: 11px 10px;
+        width: 110px;
+        background-color: #FEE3AE;
+        font-family: 'Source Sans Pro', sans-serif; }
+
+.footer {
+  margin-top: 50px;
+  background-color: #1D2331;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% auto 45%;
+      grid-template-columns: 45% auto 45%; }
+  .footer .main {
+    margin: 25px 0 40px 40px; }
+    .footer .main .top h1 {
+      font-weight: 700;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      color: #FEE3AE;
+      font-family: 'Fira Code', monospace;
+      font-size: 1.9em;
+      letter-spacing: 6px; }
+    .footer .main .top h2 {
+      color: #BFB6B6;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      font-size: 1.1em; }
+    .footer .main .bottom {
+      margin-top: 30px; }
+      .footer .main .bottom .first {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .footer .main .bottom .first a {
+          color: white;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 400;
+          font-size: 1.1em; }
+        .footer .main .bottom .first h2 {
+          color: white;
+          font-size: 1.8em;
+          padding: 0 20px; }
+      .footer .main .bottom h3 {
+        color: white;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        font-size: 1.1em; }
+        .footer .main .bottom h3 a {
+          color: white; }
+  .footer .line {
+    width: 4px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    border-radius: 50px;
+    background-color: #FEE3AE;
+    height: 60%; }
+  .footer .email {
+    margin-left: 15%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+    .footer .email h3 {
+      color: white;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      font-size: 1.1em;
+      padding-bottom: 5px; }
+    .footer .email input {
+      background-color: transparent;
+      border: solid 2px #E0FBFC;
+      border-radius: 4px;
+      padding: 10px 10px;
+      width: 50%;
+      color: white;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      font-size: 1em; }
+    .footer .email button {
+      background-color: #E0FBFC;
+      border: none;
+      border-radius: 4px;
+      height: 45px;
+      width: 90px;
+      margin-left: 10px;
+      color: black;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      cursor: pointer; }
