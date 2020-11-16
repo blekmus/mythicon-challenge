@@ -1080,7 +1080,8 @@ body {
           -ms-grid-row-align: start;
           align-self: start; }
       .home-page .main-text h1 {
-        font-size: 2.4em; }
+        font-size: 2.4em;
+        margin-top: 40px; }
     .home-page .app-info {
       -ms-grid-columns: initial;
           grid-template-columns: initial;
